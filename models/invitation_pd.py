@@ -4,7 +4,7 @@ from typing import List, Optional
 from arbiter import Arbiter
 from pydantic import BaseModel
 
-from ..auth_manager.models.group_pd import GroupRepresentation
+from ...auth_manager.models.group_pd import GroupRepresentation
 
 
 class InvitationModel(BaseModel):
