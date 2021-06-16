@@ -5,7 +5,7 @@ from pylon.core.tools import log
 
 from ..auth_manager.models.api_response_pd import ApiResponse
 from ..auth_manager.models.group_pd import GroupRepresentation
-from ..project.models.project import Project
+from ..projects.models.project import Project
 
 from .invitation_handler import InvitationHandler
 from .models.invitation_pd import InvitationModel

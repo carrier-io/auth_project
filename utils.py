@@ -1,4 +1,5 @@
 from flask import session, current_app
+
 from pylon.core.tools.rpc import RpcManager
 
 

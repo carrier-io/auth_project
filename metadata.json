@@ -3,6 +3,6 @@
   "version": "0.1",
   "module": "plugins.auth_project",
   "extract": false,
-  "depends_on": ["auth_manager", "project", "theme"],
+  "depends_on": ["auth_manager", "projects", "theme"],
   "init_after": []
 }

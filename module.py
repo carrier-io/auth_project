@@ -19,11 +19,12 @@
 from os import getenv
 
 import flask  # pylint: disable=E0401
-from arbiter import Minion
 from flask import request, render_template, session, redirect, url_for, make_response
+
+from pydantic import ValidationError
+from arbiter import Minion
 from pylon.core.tools import log  # pylint: disable=E0611,E0401
 from pylon.core.tools import module  # pylint: disable=E0611,E0401
-from pydantic import ValidationError
 
 from .group_handler import KeycloakGroupsHandler
 from .invitation_handler import InvitationHandler
