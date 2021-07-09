@@ -3,13 +3,15 @@ from typing import Optional, List
 from flask import session
 from pylon.core.tools import log
 
+from ...shared.utils.rpc import RpcMixin
+
 from ..auth_manager.models.api_response_pd import ApiResponse
 from ..auth_manager.models.group_pd import GroupRepresentation
 from ..projects.models.project import Project
 
 from .invitation_handler import InvitationHandler
 from .models.invitation_pd import InvitationModel
-from .utils import current_user_id, RpcMixin
+from .utils import current_user_id
 
 
 class KeycloakGroupsHandler(RpcMixin):

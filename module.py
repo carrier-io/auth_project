@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-# coding=utf-8
-
 #   Copyright 2021 getcarrier.io
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +29,7 @@ from .utils import current_user_id, current_user_email
 
 
 class Module(module.ModuleModel):
-    """ Galloper module """
+    """ Pylon module """
 
     def __init__(self, settings, root_path, context):
         self.settings = settings
@@ -42,7 +39,7 @@ class Module(module.ModuleModel):
 
     def init(self):
         """ Init module """
-        log.info("Initializing module project_keycloak")
+        log.info("Initializing module auth_project")
 
         bp = flask.Blueprint(  # pylint: disable=C0103
             'project_keycloak', 'plugins.project_keycloak',
@@ -71,7 +68,7 @@ class Module(module.ModuleModel):
 
     def deinit(self):  # pylint: disable=R0201
         """ De-init module """
-        log.info("De-initializing module")
+        log.info("De-initializing module auth_project")
 
     def project_join(self, url_id):
         try:
